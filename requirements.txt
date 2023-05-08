@@ -4,6 +4,6 @@ sentencepiece==0.1.97
 transformers==4.28.0
 accelerate==0.18.0
 bitsandbytes==0.37.2
-git+https://github.com/huggingface/peft.git
+peft==0.3.0
 gradio
 appdirs
