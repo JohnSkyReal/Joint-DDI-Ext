@@ -50,7 +50,7 @@ def batch_completion(all_pairs, save_path):
             padding=True,
             return_tensors="pt",
         )
-        input_ids = batch["input_ids"].cuda()
+        input_ids = batch["input_ids"]#.cuda()
         print(input_ids)
         # print(tokenizer.decode(input_ids))
 
