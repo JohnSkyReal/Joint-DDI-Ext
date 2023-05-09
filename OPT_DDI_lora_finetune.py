@@ -67,6 +67,7 @@ model = AutoModelForCausalLM.from_pretrained(
 )
 
 tokenizer = AutoTokenizer.from_pretrained(args.model_path)
+tokenizer.padding_side = "left"
 
 # # 虽说显式声明了四种特殊字符，但tokenizer
 # tokenizer.pad_token_id = 1
